@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF 6.0</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+ </head>
+
+
+<body>
+    
+    <header>
+      <div id="navbar">
+        <div id="brand"><a href="#Landing">RF</a></div>
+        <nav>
+          <ul> 
+            <li><a href="#Landing">HOME</a></li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Info">INFO</a></li>
+            <li><a href="#Portfolio">PORTFOLIO</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#Landing"><h2>HOME</h1></a></li>
+            <li><a href="#About"><h2>ABOUT</h1></a></li>
+            <li><a href="#Info"><h2>INFO</h1></a></li>
+            <li><a href="#Portfolio"><h2>PORTFOLIO</h1></a></li>
+            <li><a href="#Contact"><h2>CONTACT</h1></a></li>
+          </ul>
+      </div>
+      </div>
+      
+    </header>
+
+    <section id="Landing" class="screen">
+        <div class="text-wrap">
+            <div class="header"><h1>Vulputate nec felis non queis de par</h1></div>
+            <div class="subtext"><p>Cras gravida sit amet turpis sollicitudin dapibus vel pharetra augue</p></div>
+            <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
+        </div>
+        <div class="scroll-icon"></div>
+    </section>
+
+    <section id="About" class="screen">
+      <div class="about-wrap">
+        <div class="about-child">
+          <h1>About</h1>
+          <article class="about-text">
+            <p>Nulla laoreet ex a eros pellentesque accumsan. Quisque eu porta metus.</p>
+            <p>Pellentesque eu faucibus purus. Vivamus rhoncus ante eu auctor porta.</p>
+            <p>Mauris efficitur ultricies rhoncus.</p>
+            <p>Maecenas justo lorem, convallis vel felis vitae, eleifend pellentesque lorem. Integer turpis magna, luctus et magna et, faucibus molestie ex.</p>
+          </article>
+          <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
+        </div>
+        <div class="about-image"></div>
+      </div>
+    </section>
+
+    <section id="Info" class="screen">
+      <div class="info-wrap">
+        <h1>Info</h1>
+        <div class="info-blocks">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Portfolio" class="screen">
+      <h1>Portfolio</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="slide1">Slide 1</div></div>
+          <div class="swiper-slide"><div class="slide2">Slide 2</div></div>
+          <div class="swiper-slide"><div class="slide3">Slide 3</div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      
+    </section>
+
+    <section id="Contact" class="screen">
+      <div class="contact-wrap">
+        <h1>Contact</h1>
+        <div class="contact-container">
+          <div class="map-wrap">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16726.70580634194!2d24.48454775951971!3d58.3961277732425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd4649d3bcaf%3A0x8a0ebc0b30b98be3!2sRuutform%20O%C3%9C!5e0!3m2!1sen!2see!4v1687898901596!5m2!1sen!2see" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="container">
+            <form action="action_page.php">
+          
+              <label for="name"><p>Full Name</p></label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="company"><p>Company</p></label>
+              <input type="text" id="company" name="company" placeholder="Your Company..">
+          
+              <label for="message"><p>Message</p></label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="SUBMIT" class="cButton">
+          
+            </form>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+          <h3>Ruutform</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2023 Ruutform.</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        // When the user scrolls down 250px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            document.getElementById("navbar").style.top = "20px";
+          } else {
+            document.getElementById("navbar").style.top = "-58px";
+          }
+        };
+
+
+
+        // Navbar hamburger
+        function toggleMobileMenu(menu) {
+          menu.classList.toggle('open');
+        }
+
+
+
+        // Swiper.js
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          initialSlide: 1,
+          spaceBetween: 100,
+          slidesPerView: 1,
+          centeredSlides: true,
+
+          breakpoints: {
+            '@0.75': {
+              slidesPerView: 1.25,
+              spaceBetween: 25,
+            },
+            '@1.0': {
+              slidesPerView: 1.5,
+              spaceBetween: 50,
+            },
+            '@1.25': {
+              slidesPerView: 1.75,
+              spaceBetween: 100,
+            },
+          },
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    </script>
+
+</body>
+</html>
