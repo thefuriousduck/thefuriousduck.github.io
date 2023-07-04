@@ -99,7 +99,7 @@ header nav {
 }
 #Contact.screen {
     background-color: rgb(41, 41, 41);
-    height: 150vh;
+    height: 100vh;
 }
 
 
@@ -516,6 +516,9 @@ footer{
     #About .cButton {
         margin: auto;
     }
+    #Contact.screen {
+        height: 110vh;
+    }
     .contact-container {
         grid-template-columns: minmax(40vh, 1fr);
     }
@@ -532,5 +535,8 @@ footer{
     .block {
         width: 80%;
         height: 15vh;
+    }
+    #Contact.screen {
+        height: 130vh;
     }
 }
