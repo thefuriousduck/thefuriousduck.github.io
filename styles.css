@@ -99,7 +99,7 @@ header nav {
 }
 #Contact.screen {
     background-color: rgb(41, 41, 41);
-    height: auto;
+    height: 150vh;
 }
 
 
@@ -525,9 +525,7 @@ footer{
     .map-wrap {
         height: 25vh;
     }
-    #Contact .screen {
-        height: 150vh;
-    }
+
 }
 
 @media (max-aspect-ratio: 3/4) {
