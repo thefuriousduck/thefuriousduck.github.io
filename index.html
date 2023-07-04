@@ -52,12 +52,13 @@
     </header>
 
     <section id="Landing" class="screen">
-        <div class="text-wrap">
-            <div class="header"><h1>Vulputate nec felis non queis de par</h1></div>
-            <div class="subtext"><p>Cras gravida sit amet turpis sollicitudin dapibus vel pharetra augue</p></div>
-            <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
-        </div>
-        <div class="scroll-icon"></div>
+      <img src="forest.jpg" class="rellax background" data-rellax-speed="-10">
+      <div class="text-wrap">
+        <div class="header"><h1>Vulputate nec felis non queis de par</h1></div>
+        <div class="subtext"><p>Cras gravida sit amet turpis sollicitudin dapibus vel pharetra augue</p></div>
+        <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
+      </div>
+      <div class="scroll-icon"></div>
     </section>
 
     <section id="About" class="screen">
@@ -149,6 +150,10 @@
     </footer>
 
 
+    <!-- CDN callouts -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
@@ -207,6 +212,11 @@
             prevEl: '.swiper-button-prev',
           },
         });
+
+
+        // Rellax
+        var rellax = new Rellax('.rellax');
+
     </script>
 
 </body>
