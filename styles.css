@@ -546,6 +546,12 @@ footer{
         height: 15vh;
     }
     #Contact.screen {
-        height: 130vh;
+        height: 120vh;
+    }
+    .map-wrap {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
     }
 }
