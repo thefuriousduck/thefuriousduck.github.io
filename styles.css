@@ -76,27 +76,30 @@ header nav {
 
 
 .screen {
-    height: 100vh;
-    height: 100svh;
     position: relative;
     margin: 0;
     padding: 0;
     border: 1px solid red;
 }
 #Landing.screen {
+    height: 100vh;
     background-color: rgb(41, 41, 41);
 }
 #About.screen {
+    height: 120vh;
     background-color: rgb(41, 41, 41);
 }
 #Info.screen {
+    height: 100vh;
     background-color: rgb(41, 41, 41);
 }
 #Portfolio.screen {
+    height: 100vh;
     background-color: rgb(41, 41, 41);
 }
 #Contact.screen {
     background-color: rgb(41, 41, 41);
+    height: auto;
 }
 
 
@@ -489,12 +492,10 @@ footer{
 
 
 
-@media (max-aspect-ratio: 1) {
+@media  (max-aspect-ratio: 1){
     #Landing h1 {
-        color: blue;
+        color: rgb(255, 0, 0);
     }
-
-
     header nav {
         display: none;
     }
@@ -502,8 +503,6 @@ footer{
         display: block;
         z-index: 5;
     }
-
-
     #Landing .text-wrap {
         width: 70vw;
         left: 15vw;
@@ -517,7 +516,6 @@ footer{
     #About .cButton {
         margin: auto;
     }
-
     .contact-container {
         grid-template-columns: minmax(40vh, 1fr);
     }
@@ -526,6 +524,9 @@ footer{
     }
     .map-wrap {
         height: 25vh;
+    }
+    #Contact .screen {
+        height: 150vh;
     }
 }
 
