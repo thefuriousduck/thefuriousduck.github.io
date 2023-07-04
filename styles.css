@@ -87,6 +87,7 @@ header nav {
 }
 #About.screen {
     height: 120vh;
+    min-height: 850px;
     background-color: rgb(41, 41, 41);
 }
 #Info.screen {
@@ -100,6 +101,7 @@ header nav {
 #Contact.screen {
     background-color: rgb(41, 41, 41);
     height: 100vh;
+    min-height: 850px;
 }
 
 
@@ -548,10 +550,26 @@ footer{
     #Contact.screen {
         height: 120vh;
     }
+    
+}
+
+@media (max-aspect-ratio: 1/2) {
     .map-wrap {
         width: 90%;
     }
     .container {
         width: 90%;
+    }
+    .about-child {
+        width: 90%;
+    }
+    .about-image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    #Landing .scroll-icon {
+        display: none;
     }
 }
