@@ -24,11 +24,11 @@ header nav ul {
     align-items: center;
 }
 #brand {
-    background-color: #cfcfcf;
-    display: flex;
-    align-items: center;
-    border-radius: 25%;
     z-index: 3;
+    height: 5vh;
+    width: 5vh;
+}
+#brand a img{
     height: 5vh;
     width: 5vh;
 }
@@ -504,6 +504,9 @@ footer{
 
 
 @media  (max-aspect-ratio: 1){
+    .rellax {
+        transform: translate3d(0,0,0) !important;
+    }
     #Landing h1 {
         color: rgb(255, 0, 0);
     }
