@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
  </head>
 
@@ -50,6 +51,8 @@
       </div>
     </header>
 
+
+
     <section id="Landing" class="screen">
       <img src="forest.jpg" class="rellax background" data-rellax-speed="-10">
       <div class="text-wrap">
@@ -57,75 +60,222 @@
         <div class="subtext"><p>Cras gravida sit amet turpis sollicitudin dapibus vel pharetra augue</p></div>
         <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
       </div>
-      <div class="scroll-icon"></div>
+      <div class="scroll-icon" id="animation.container"></div>
+        <script>
+          var animation = bodymovin.loadAnimation({
+            container: document.getElementById('animation.container'),
+            path: 'scroll2.json',
+            render: 'svg',
+            loop: true,
+            autoplay: true,
+            name: 'scroll animation',
+          });
+        </script>
     </section>
+
+
 
     <section id="About" class="screen">
       <div class="about-wrap">
-        <div class="about-child">
+        <div class="about-container">
           <h1>About</h1>
           <article class="about-text">
             <p>Nulla laoreet ex a eros pellentesque accumsan. Quisque eu porta metus.</p>
             <p>Pellentesque eu faucibus purus. Vivamus rhoncus ante eu auctor porta.</p>
             <p>Mauris efficitur ultricies rhoncus.</p>
-            <p>Maecenas justo lorem, convallis vel felis vitae, eleifend pellentesque lorem. Integer turpis magna, luctus et magna et, faucibus molestie ex.</p>
+            <p>Maecenas justo lorem. Integer turpis magna, luctus et magna et, faucibus molestie ex.</p>
+            <p>Pellentesque eu faucibus ante eu auctor porta.</p>
+            <p>Luctus et magna et, faucibus molestie ex.</p>
+            
           </article>
-          <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
+
+          <!-- <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a> -->
+
         </div>
+
+        
         <div class="about-image"></div>
       </div>
     </section>
 
+
+
     <section id="Info" class="screen">
       <div class="info-wrap">
-        <h1>Info</h1>
-        <div class="info-blocks">
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
+        <!--<h2>Types of Services</h2>-->
+        <div class="info-container">
+          <!-- FIRST SLIDE-->
+          <div class="block swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide a">
+                <div class="icon"></div>
+                <div class="info-text-block">
+                  <h2>First Option</h2>
+                  <p>Excepteur sint occaecat cupidatat</p>
+                  <div class="swipe-icon" id="animation.container1"></div>
+                  <script>
+                  var animation = bodymovin.loadAnimation({
+                      container: document.getElementById('animation.container1'),
+                      path: 'swipe1.json',
+                      render: 'svg',
+                      loop: true,
+                      autoplay: true,
+                      name: 'swipe animation',
+                    });
+                  </script>
+                </div>
+              </div>
+              <div class="swiper-slide b">
+                <div class="icon"></div>
+                <div class="block-text">
+                  <h2>First Option</h2>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND SLIDE-->
+        <div class="block swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide a">
+              <div class="icon"></div>
+              <div class="info-text-block">
+                <h2>Second Option</h2>
+                <p>Stempor incididunt</p>
+                <div class="swipe-icon" id="animation.container2"></div>
+                  <script>
+                  var animation = bodymovin.loadAnimation({
+                      container: document.getElementById('animation.container2'),
+                      path: 'swipe1.json',
+                      render: 'svg',
+                      loop: true,
+                      autoplay: true,
+                      name: 'swipe animation',
+                    });
+                  </script>
+              </div>
+              
+            </div>
+            <div class="swiper-slide b reverse">
+              <div class="icon"></div>
+              <div class="block-text">
+                <h2>Second Option</h2>
+                <p>Stempor incididunt magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+            </div>
+          </div>        
+        </div>
+        <!-- THIRD SLIDE-->
+        <div class="block swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide a">
+              <div class="icon"></div>
+              <div class="info-text-block">
+                <h2>Third Option</h2>
+                <p>Lorem ipsum amet</p>
+                <div class="swipe-icon" id="animation.container3"></div>
+                  <script>
+                  var animation = bodymovin.loadAnimation({
+                      container: document.getElementById('animation.container3'),
+                      path: 'swipe1.json',
+                      render: 'svg',
+                      loop: true,
+                      autoplay: true,
+                      name: 'swipe animation',
+                    });
+                  </script>
+              </div>
+            </div>
+            <div class="swiper-slide b">
+              <div class="icon"></div>
+              <div class="block-text">
+                <h2>Third Option</h2>
+                <p>Lorem ipsum amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOURTH SLIDE-->
+        <div class="block swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide a">
+              <div class="icon"></div>
+              <div class="info-text-block">
+                <h2>Fourth Option</h2>
+                <p>Nisl vel pretium lectus</p>
+                <div class="swipe-icon" id="animation.container4"></div>
+                  <script>
+                  var animation = bodymovin.loadAnimation({
+                      container: document.getElementById('animation.container4'),
+                      path: 'swipe1.json',
+                      render: 'svg',
+                      loop: true,
+                      autoplay: true,
+                      name: 'swipe animation',
+                    });
+                  </script>
+              </div>
+            </div>
+            <div class="swiper-slide b reverse">
+              <div class="icon"></div>
+              <div class="block-text text-align-left">
+                <h2>Fourth Option</h2>
+                <p>Nisl vel pretium lectus quam id leo in.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
 
     <section id="Portfolio" class="screen">
-      <h1>Portfolio</h1>
-      <div class="swiper">
+      <h2>Portfolio</h2>
+      <div class="swiper2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><div class="slide1">Slide 1</div></div>
-          <div class="swiper-slide"><div class="slide2">Slide 2</div></div>
-          <div class="swiper-slide"><div class="slide3">Slide 3</div></div>
+          <div class="swiper-slide">
+            <p>Integer turpis magna, luctus et magna<br>Mauris efficitur ultricies rhoncus.</p>
+            <img class="slide1" src="sofa1.PNG">
+          </div>
+          <div class="swiper-slide">
+            <p>Integer turpis magna, luctus et magna<br>Mauris efficitur ultricies rhoncus.</p>
+            <img class="slide2" src="sofa2.PNG">
+          </div>
+          <div class="swiper-slide">
+            <p>Integer turpis magna, luctus et magna<br>Mauris efficitur ultricies rhoncus.</p>
+            <img class="slide3" src="sofa3.PNG">
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!--<div class="swiper-pagination"></div>-->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-      
     </section>
 
     <section id="Contact" class="screen">
       <div class="contact-wrap">
         <h1>Contact</h1>
+        <p>Duis aute irure dolor in pariatur. Excepteur non proident, sunt introve cest ula femm culpa quintos eli officia</p>
         <div class="contact-container">
+
           <div class="map-wrap">
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16726.70580634194!2d24.48454775951971!3d58.3961277732425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd4649d3bcaf%3A0x8a0ebc0b30b98be3!2sRuutform%20O%C3%9C!5e0!3m2!1sen!2see!4v1687898901596!5m2!1sen!2see" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="container">
-            <form action="action_page.php">
+          <form class="container" action="action_page.php">
           
-              <label for="name"><p>Full Name</p></label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
+            <label for="name"><p>Full Name</p></label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
           
-              <label for="company"><p>Company</p></label>
-              <input type="text" id="company" name="company" placeholder="Your Company..">
+            <label for="company"><p>Company</p></label>
+            <input type="text" id="company" name="company" placeholder="Your Company..">
           
-              <label for="message"><p>Message</p></label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="message"><p>Message</p></label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           
-              <input type="submit" value="SUBMIT" class="cButton">
+            <input type="submit" value="SUBMIT" class="cButton">
           
-            </form>
-          </div>
+          </form>
+          
         </div>
           
       </div>
@@ -151,8 +301,7 @@
 
     <!-- CDN callouts -->
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
@@ -161,42 +310,43 @@
         
         function scrollFunction() {
           if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-            document.getElementById("navbar").style.top = "20px";
+            document.getElementById("navbar").style.top = "30px";
           } else {
-            document.getElementById("navbar").style.top = "-58px";
+            document.getElementById("navbar").style.top = "-78px";
           }
         };
-
-
 
         // Navbar hamburger
         function toggleMobileMenu(menu) {
           menu.classList.toggle('open');
         }
 
-
-
         // Swiper.js
-        const swiper = new Swiper('.swiper', {
+        const swiper2 = new Swiper('.swiper2', {
           // Optional parameters
           direction: 'horizontal',
           initialSlide: 1,
           spaceBetween: 100,
           slidesPerView: 1,
           centeredSlides: true,
+          grabCursor: true,
+
+          
 
           breakpoints: {
             '@0.75': {
-              slidesPerView: 1.25,
-              spaceBetween: 25,
+              slidesPerView: 1.2,
+              spaceBetween: 10,
             },
+
             '@1.0': {
               slidesPerView: 1.5,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
+
             '@1.25': {
               slidesPerView: 1.75,
-              spaceBetween: 100,
+              spaceBetween: 200,
             },
           },
 
@@ -212,9 +362,19 @@
           },
         });
 
+        var swiper1 = new Swiper(".swiper1", {
+          effect: "flip",
+          grabCursor: true,
+          loop: "true",
+        });
+
 
         // Rellax
         var rellax = new Rellax('.rellax');
+
+
+
+
 
     </script>
 
