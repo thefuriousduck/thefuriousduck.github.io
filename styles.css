@@ -674,9 +674,6 @@ footer{
     .rellax {
         transform: translate3d(0,0,0) !important;
     }
-    #Landing h1 {
-        color: rgb(255, 0, 0);
-    }
     header nav {
         display: none;
     }
