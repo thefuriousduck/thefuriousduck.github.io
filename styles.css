@@ -79,6 +79,9 @@ header nav {
 
 /* ____MOBILE MENU START____*/
 
+#navbar h2 {
+    font-size: 1.5em;
+}
 #hamburger-icon {
     z-index: 5;
     margin: auto 0;
@@ -108,8 +111,8 @@ header nav {
     display: none;
     position: absolute;
     top: 0;
-    left: 11vw;
-    width: 74%;
+    left: 15vw;
+    width: 68%;
 } 
 .open .mobile-menu {
     z-index: 1;
@@ -655,6 +658,11 @@ footer{
 /* SMALLER SCREEN THAN APECT RATIO 1*/
 @media  (max-aspect-ratio: 1){
    
+
+    #navbar {
+        left: 5%;
+        width: 90%;
+    }
     .slide1 {
         width: 80vw;
     }
