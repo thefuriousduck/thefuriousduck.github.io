@@ -381,12 +381,32 @@ h2 {
     letter-spacing: 0.1em;
     margin: 0 0 0.5em 0;
 }
+#Info .info-header {
+    font-size: 2em;
+    text-align: left;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.5em 0;
+    position: relative;
+    left: 15%;
+    width: 80%;
+}
+#Info .info-subheader {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 15%;
+    width: 75%;
+}
 #Info p {
     font-size: 1em;
     color: white;
     text-align: right;
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
+    margin-bottom: 3em;
 }
 .reverse {
     flex-direction: row-reverse;
