@@ -407,6 +407,7 @@ h2 {
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
     margin-bottom: 3em;
+    line-height: 1em;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -427,7 +428,7 @@ h2 {
 }
 .swipe-icon {
     float: right;
-    height: 10vh;
+    height: 8vh;
     width: 10vh;
 }
 
