@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
@@ -31,7 +32,7 @@
           <ul> 
             <li><a href="#Landing">HOME</a></li>
             <li><a href="#About">ABOUT</a></li>
-            <!-- <li><a href="#Info">INFO</a></li> -->
+            <li><a href="#Info">SERVICES</a></li>
             <li><a href="#Portfolio">PORTFOLIO</a></li>
             <li><a href="#Contact">CONTACT</a></li>
           </ul>
@@ -43,7 +44,7 @@
           <ul class="mobile-menu">
             <li><a href="#Landing"><h2>HOME</h1></a></li>
             <li><a href="#About"><h2>ABOUT</h1></a></li>
-            <!-- <li><a href="#Info"><h2>INFO</h1></a></li> -->
+            <li><a href="#Info"><h2>SERVICES</h1></a></li>
             <li><a href="#Portfolio"><h2>PORTFOLIO</h1></a></li>
             <li><a href="#Contact"><h2>CONTACT</h1></a></li>
           </ul>
@@ -92,7 +93,7 @@
         </div>
 
         
-        <div class="about-image"><model-viewer class="armchair3d" alt="Armchair" src="armchair.glb" ar shadow-intensity="1" camera-orbit="calc(-6.5rad + env(window-scroll-y) * 5rad)" ></model-viewer></div>
+        <div class="about-image"><model-viewer class="armchair3d" alt="Armchair" src="armchair.glb" shadow-intensity="1" camera-orbit="calc(0.3rad + env(window-scroll-y) * 8rad)" loading="eager"></model-viewer></div>
 
       </div>
     </section>
@@ -110,8 +111,8 @@
               <div class="swiper-slide a">
                 <div class="icon"></div>
                 <div class="info-text-block">
-                  <h2>First Option</h2>
-                  <p>Excepteur sint occaecat cupidatat</p>
+                  <h2>For Your Home</h2>
+                  <p>Bring comfort and style to your home</p>
                   <div class="swipe-icon" id="animation.container1"></div>
                   <script>
                   var animation = bodymovin.loadAnimation({
@@ -128,8 +129,8 @@
               <div class="swiper-slide b">
                 <div class="icon"></div>
                 <div class="block-text">
-                  <h2>First Option</h2>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                  <h2>A Touch of Elegance to Every Corner of Your Home</h2>
+                  <p>Sofas, armchairs, beds, chairs, poufs, cushions, etc.</p>
                 </div>
               </div>
             </div>
@@ -140,8 +141,8 @@
             <div class="swiper-slide a">
               <div class="icon"></div>
               <div class="info-text-block">
-                <h2>Second Option</h2>
-                <p>Stempor incididunt</p>
+                <h2>For Your Business</h2>
+                <p>Transform your commercial space with professional upholstery</p>
                 <div class="swipe-icon" id="animation.container2"></div>
                   <script>
                   var animation = bodymovin.loadAnimation({
@@ -159,7 +160,7 @@
             <div class="swiper-slide b reverse">
               <div class="icon"></div>
               <div class="block-text">
-                <h2>Second Option</h2>
+                <h2>For Your Business</h2>
                 <p>Stempor incididunt magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
               </div>
             </div>
@@ -171,8 +172,8 @@
             <div class="swiper-slide a">
               <div class="icon"></div>
               <div class="info-text-block">
-                <h2>Third Option</h2>
-                <p>Lorem ipsum amet</p>
+                <h2>Custom Solutions</h2>
+                <p>Collaborate to design and craft unique furniture pieces tailored to your vision</p>
                 <div class="swipe-icon" id="animation.container3"></div>
                   <script>
                   var animation = bodymovin.loadAnimation({
@@ -201,8 +202,8 @@
             <div class="swiper-slide a">
               <div class="icon"></div>
               <div class="info-text-block">
-                <h2>Fourth Option</h2>
-                <p>Nisl vel pretium lectus</p>
+                <h2>Restoring</h2>
+                <p>Recover old furniture</p>
                 <div class="swipe-icon" id="animation.container4"></div>
                   <script>
                   var animation = bodymovin.loadAnimation({
@@ -219,7 +220,7 @@
             <div class="swiper-slide b reverse">
               <div class="icon"></div>
               <div class="block-text text-align-left">
-                <h2>Fourth Option</h2>
+                <h2>Restoring</h2>
                 <p>Nisl vel pretium lectus quam id leo in.</p>
               </div>
             </div>
