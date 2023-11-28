@@ -291,10 +291,14 @@ h2 {
     transform: translateX(-50%);
 }
 .about-image {
-    background-color: #cfcfcfc5;
     height: 400px;
     width: 400px;
-    border-radius: 30px;
+}
+.armchair3d {
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
 }
 #About p {
     color: white;
