@@ -61,11 +61,12 @@ header nav {
 }
 #navbar nav a {
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25em;
     letter-spacing: 0.15em;
     color: rgb(0, 0, 0);
     padding: 26px 15px;
+    border-radius: 20px;
 }
 #navbar nav li {
     padding: 0 calc(7vw - 80px);
@@ -73,8 +74,9 @@ header nav {
 #navbar nav a:hover {
     background-color: #464646;
     color: rgb(255, 255, 255);
-    border-radius: 25px;
+    border-radius: 20px;
     transition: 0.1s;
+    padding: 20px 15px;
 }
 
 /* ____NAVBAR END____*/
@@ -161,7 +163,7 @@ h1 {
     color: white;
     font-size: calc(2vw + 40px);
     font-weight: 600;
-    margin: 1vh 0 2vh 0;
+    margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
     line-height: 1;
@@ -177,16 +179,43 @@ h2 {
     line-height: 0.9;
     letter-spacing: 0.025em;
 }
-
+h3 {
+    color: rgb(255, 190, 190);
+    font-size: calc(2vw + 40px);
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    letter-spacing: 0.025em;
+}
 
 
 /* ____LANDING START____*/
+
+.header-text {
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#Landing h1 {
+    width:fit-content;
+    margin: 0 0;
+}
 #Landing.screen {
     height: 100vh;
     height: 100svh;
     background-color: rgb(41, 41, 41);
 }
 #Landing .background {
+    filter: brightness(80%);
     object-fit: cover;
     padding: 0;
     margin: 0;
@@ -195,19 +224,22 @@ h2 {
     z-index: 0;
 }
 .text-wrap {
-    /* border: 1px solid red; */
-    width: 50vw;
+    /*border: 1px solid red;*/
+    width: 80vw;
+    height: 70vh;
     position: absolute;
     top: 30vh;
-    left: 25vw;
-    text-align: center;
+    left: 15vw;
+    text-align: left;
+
 }
 #Landing p {
-    color: white;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.75);
     font-size: calc(1em + 0.75vw);
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
-    margin: 1vh 0 10vh 0;
+    margin: 1vh 0 0 0;
     padding: 0;
 }
 .scroll-icon {
@@ -231,7 +263,8 @@ h2 {
     padding: 0.8em 4em 0.8em 4em;
     border: 2px solid #ffffff;
     color: white;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 800;
     border-radius: 15px;
     text-decoration: none!important;
     display: inline-block;
@@ -240,9 +273,17 @@ h2 {
     word-spacing: 0.1em;
     letter-spacing: 0.3em;
 }
+#Landing .cButton {
+    
+
+    text-align: center;
+    max-width: 150px;
+
+}
 .cButton:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+    font-weight: 800;
 }
 
 /* ____CONTACT BUTTON END____*/
@@ -516,7 +557,7 @@ h2 {
 #Contact.screen {
     background-color: rgb(41, 41, 41);
     min-height: 850px;
-    padding: 2em 0;
+    padding: 4em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -665,10 +706,16 @@ footer{
 
 /* ____FOOTER END____*/
 
+@media  (max-aspect-ratio: 9/10){
 
 
+}
 @media  (max-aspect-ratio: 5/4){
    
+    #Landing p {
+        width: 60%;
+    }
+
     .slide1 {
         width: 60vw;
     }
@@ -681,10 +728,11 @@ footer{
     #Portfolio p {
         width: 40vw;
     }
+    
 }
 
 
-/* SMALLER SCREEN THAN APECT RATIO 1*/
+/* SMALLER SCREEN THAN ASPECT RATIO 1*/
 @media  (max-aspect-ratio: 1){
    
 
@@ -712,10 +760,7 @@ footer{
         display: block;
         z-index: 5;
     }
-    #Landing .text-wrap {
-        width: 70vw;
-        left: 15vw;
-    }
+
     .about-wrap{
         margin: 7em 0 7em 0;
     }
@@ -741,7 +786,28 @@ footer{
 }
 
 @media (max-aspect-ratio: 3/4) {
-
+    #Landing p {
+        width: 85%;
+    }
+    .header {
+        display: inline-block;
+    }
+    .header {
+        min-height: 110px;
+    }
+    .text-wrap {
+        top: 25vh;
+        top: 25svh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .header-text {
+        height: 60%;
+    }
+    #Landing .cButton {
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .about-image {
         width: 70vw;
         height: 70vw;
@@ -791,9 +857,19 @@ footer{
 
 @media (max-aspect-ratio: 1/2) {
 
+    .header {
+        min-height: 80px;
+    }
+    #Landing h1 {
+        font-size: 2.5em;
+    }
 
-
-
+    #Landing h3 {
+        font-size: 2.5em;
+    }
+    #Landing p {
+        width: 100%;
+    }
     
     /*
     .about-child {
