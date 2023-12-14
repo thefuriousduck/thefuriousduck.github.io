@@ -430,26 +430,30 @@ h3 {
     letter-spacing: 0.1em;
     margin: 0 0 0.5em 0;
 }
-#Info .info-header {
+#Info h2 {
     font-size: 2em;
-    text-align: left;
     letter-spacing: 0.05em;
-    margin: 0 0 0.5em 0;
-    position: relative;
-    left: 15%;
-    width: 80%;
+    margin-bottom: 0.5em;
+    line-height: 1.25em;
 }
-#Info .info-subheader {
+.info-subheader {
     font-size: 1em;
-    color: white;
-    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
-    position: relative;
-    left: 15%;
-    width: 75%;
 }
-#Info p {
+#Info .info-header {
+    text-align: left;
+    margin-bottom: 1.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+#Info .info-subheader { 
+    text-align: center;
+}
+#Info .swiper-wrapper p {
     font-size: 1em;
     color: white;
     text-align: right;
@@ -807,6 +811,9 @@ footer{
     #Landing .cButton {
         left: 50%;
         transform: translateX(-50%);
+    }
+    .about-container {
+        width: 90%;
     }
     .about-image {
         width: 70vw;
