@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="cdn/css/humbleScroll.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
  </head>
@@ -59,7 +60,7 @@
       <div class="text-wrap">
         <div class="header-text">
           <div class="header-h1">
-            <h1>Crafted Comfort</h1>
+            <h1 data-hs="fade right blur">Crafted Comfort</h1>
             <div class="header">
               <h1>For Your&nbsp;</h1>
               <span id="typed"></span>
@@ -72,7 +73,7 @@
         </div>
       </div>
 
-      <div class="scroll-icon" id="animation.container"></div>
+      <div data-hs="fade right blur" class="scroll-icon" id="animation.container"></div>
         <script>
           var animation = bodymovin.loadAnimation({
             container: document.getElementById('animation.container'),
@@ -88,7 +89,7 @@
     <section id="About" class="screen">
       <div class="about-wrap">
         <div class="about-container">
-          <h1>About</h1>
+          <h1 data-hs="fade right blur">About</h1>
           <article class="about-text">
             <p><strong>Crafting Comfort since 2015:</strong> A dedicated team of artisans committed to merging comfort and craftsmanship.<br><br></p>
             <p><strong>Customisation Options:</strong> Choose fabric, color, and design to create a one-of-a-kind piece that suits your style.<br><br></p>
@@ -115,7 +116,7 @@
         </div>
         <div class="info-container">
           <!-- FIRST SLIDE-->
-          <div class="block swiper1">
+          <div class="info-flex block swiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide a">
                 <div class="icon"></div>
@@ -145,7 +146,7 @@
             </div>
           </div>
           <!-- SECOND SLIDE-->
-        <div class="block swiper1">
+        <div class="info-flex block swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide a">
               <div class="icon"></div>
@@ -176,7 +177,7 @@
           </div>        
         </div>
         <!-- THIRD SLIDE-->
-        <div class="block swiper1">
+        <div class="info-flex block swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide a">
               <div class="icon"></div>
@@ -206,7 +207,7 @@
           </div>
         </div>
         <!-- FOURTH SLIDE-->
-        <div class="block swiper1">
+        <div class="info-flex block swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide a">
               <div class="icon"></div>
@@ -328,6 +329,7 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
+    <script src="cdn/js/humbleScroll.js"></script>
 
 
     <script>
@@ -356,7 +358,7 @@
           slidesPerView: 1,
           centeredSlides: true,
           grabCursor: true,
-
+          slideToClickedSlide: true,
           
 
           breakpoints: {
@@ -387,7 +389,6 @@
             prevEl: '.swiper-button-prev',
           },
         });
-
         var swiper1 = new Swiper(".swiper1", {
           effect: "flip",
           grabCursor: true,
@@ -395,11 +396,8 @@
         });
 
 
-
-
         // Rellax
         var rellax = new Rellax('.rellax');
-
 
 
         // Typed.js
@@ -418,6 +416,12 @@
           loop: true,
           showCursor: false,
         });
+
+
+        // HumbleScroll.js
+        const scroll = new HumbleScroll({
+        // options here
+        })
 
     </script>
 

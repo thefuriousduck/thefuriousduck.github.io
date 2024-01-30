@@ -176,7 +176,7 @@ h2 {
     margin: 2vh 0 2vh 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    line-height: 0.9;
+    
     letter-spacing: 0.025em;
 }
 h3 {
@@ -274,11 +274,8 @@ h3 {
     letter-spacing: 0.3em;
 }
 #Landing .cButton {
-    
-
     text-align: center;
     max-width: 150px;
-
 }
 .cButton:hover {
     background-color: #ffffff;
@@ -372,7 +369,7 @@ h3 {
 .info-wrap {
     /* border: 1px solid red; */
     position: relative;
-    width: 80vw;
+    width: 60vw;
     margin: 4em 0 10em 0;
 }
 #Info h2 {
@@ -382,23 +379,28 @@ h3 {
 .info-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     align-items: center;
     max-width: 1800px;
 }
+
+.info-flex:nth-child(even) {
+    margin-left: 20%;
+}
 .block {
-    width: 45%;
-    max-width: 530px;
+    width: 80%;
     height: 30vh;
-    margin: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border-radius: 20px;
     
 }
 .swiper-slide {
     border-radius: 20px;
+    
 }
 .a {
-    background: rgb(85, 85, 85);
+    background: rgba(85, 85, 85, 0.281);
     display: flex!important;
     flex-direction: row;
     flex-wrap: wrap;
@@ -406,7 +408,7 @@ h3 {
     align-items: center;
 }
 .b {
-    background: #25a0b6;
+    background: rgb(134, 81, 81);
     display: flex!important;
     flex-direction: row;
     flex-wrap: wrap;
@@ -415,7 +417,7 @@ h3 {
 }
 
 .icon {
-    background: #3d3d3d;
+    background: rgb(170, 122, 122);
     width: 100px;
     height: 100px;
     border-radius: 15px;  
@@ -444,7 +446,7 @@ h3 {
 }
 #Info .info-header {
     text-align: left;
-    margin-bottom: 1.5em;
+    margin-bottom: 5em;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -710,16 +712,16 @@ footer{
 
 /* ____FOOTER END____*/
 
-@media  (max-aspect-ratio: 9/10){
-
-
+@media  (max-aspect-ratio: 5/3){
+    .info-wrap{
+        width: 80%;
+    }
 }
-@media  (max-aspect-ratio: 5/4){
+@media  (max-aspect-ratio: 7/5){
    
     #Landing p {
         width: 60%;
     }
-
     .slide1 {
         width: 60vw;
     }
@@ -765,6 +767,11 @@ footer{
         z-index: 5;
     }
 
+    #Landing .header-text {
+        min-height: 45%;
+    }
+
+
     .about-wrap{
         margin: 7em 0 7em 0;
     }
@@ -777,6 +784,12 @@ footer{
     #About .cButton {
         margin: auto;
     }  
+    .info-wrap{
+        width: 80%;
+    }
+    .info-flex {
+       margin-left: 0;
+    }
     .contact-wrap {
         width: 90vw;
     }
@@ -806,7 +819,7 @@ footer{
         width: 90vw;
     }
     .header-text {
-        height: 60%;
+        height: 50%;
     }
     #Landing .cButton {
         left: 50%;
@@ -819,6 +832,23 @@ footer{
         width: 70vw;
         height: 70vw;
     }
+
+    .block {
+        width: 90%;
+        height: 30vh;
+    }
+    .info-wrap {
+        margin: 0 0 7em 0;
+        width: 100%;
+    }
+    .info-flex:nth-child(even) {
+    margin-left: 5%;
+    }
+    
+    .info-flex {
+    margin-left: 5%;
+    }
+
     #Portfolio h2 {   
         right: 1.5em;
     }
@@ -833,14 +863,6 @@ footer{
     }
     .slide3 {
         width: 100vw;
-    }
-    .block {
-        width: 95%;
-        height: 30vh;
-    }
-    .info-wrap {
-        margin: 0 0 7em 0;
-        width: 100%;
     }
     .contact-wrap {
         margin: 10vh 0 10vh 0;
@@ -867,29 +889,38 @@ footer{
     .header {
         min-height: 80px;
     }
+    .header-h1 {
+        position: relative;
+        left: 5vw;
+    }
     #Landing h1 {
         font-size: 2.2em;
     }
-
     #Landing h3 {
         font-size: 2.2em;
     }
     #Landing p {
         width: 100%;
     }
-    
-    /*
-    .about-child {
-        width: 90%;
-    }
-    .about-image {
-        width: 90%;
-    }
-    */
+
+    .info-text-block {
+        height: 100%;
+    }  
 }
 
-/*@media (max-width: 400px) {
-    #Landing .scroll-icon {
-        display: none;
+@media (max-aspect-ratio: 1/2) {
+    #Landing .header-text {
+        height: 40%;
     }
-}*/
+    #Landing h1 {
+        font-size: 9vw;
+    }
+    #Landing h3 {
+        font-size: 9vw;
+    }#Landing p {
+        font-size: 4vw;
+    }
+    .cButton {
+        font-size: 0.75em;
+    }
+}
