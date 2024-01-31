@@ -3,7 +3,7 @@
     --swiper-pagination-color: #ffffff;
   }
 html{
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(36, 36, 36);
 }
 html,body,* {
     padding:0; 
@@ -293,7 +293,7 @@ h3 {
   
 #About.screen {
     min-height: 850px;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(20, 20, 20);
 
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +358,7 @@ h3 {
 
 #Info.screen {
     
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(24, 24, 24);
 
     display: flex;
     flex-wrap: wrap;
@@ -503,7 +503,7 @@ h3 {
 
 #Portfolio.screen {
     height: 100vh;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(28, 28, 28);
 }
 #Portfolio h2 {
     position: relative;
@@ -548,9 +548,6 @@ h3 {
     object-fit: cover;
 }
 
-
-
-
 /* ____PORTFOLIO SWIPER END____*/
 
 
@@ -561,7 +558,7 @@ h3 {
 /* ____CONTACT START____*/
 
 #Contact.screen {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(32, 32, 32);
     min-height: 850px;
     padding: 4em 0;
     display: flex;
@@ -803,6 +800,12 @@ footer{
 }
 
 @media (max-aspect-ratio: 3/4) {
+    #Landing h1 {
+        font-size: 7.5vw;
+    }
+    #Landing h3 {
+        font-size: 7.5vw;
+    }
     #Landing p {
         width: 85%;
     }
@@ -810,13 +813,14 @@ footer{
         display: inline-block;
     }
     .header {
-        min-height: 110px;
+        min-height: 0;
+        display: flex;
     }
     .text-wrap {
         top: 25vh;
         top: 25svh;
-        left: 5vw;
-        width: 90vw;
+        left: 10vw;
+        width: 80vw;
     }
     .header-text {
         height: 50%;
@@ -912,11 +916,38 @@ footer{
     #Landing .header-text {
         height: 40%;
     }
+    #Landing .header {
+        min-height: 0;
+    }
     #Landing h1 {
-        font-size: 9vw;
+        font-size: 7vw;
     }
     #Landing h3 {
-        font-size: 9vw;
+        font-size: 7vw;
+    }#Landing p {
+        font-size: 4vw;
+    }
+    .cButton {
+        font-size: 0.75em;
+    }
+}
+@media (max-width:400px) {
+    #Landing .text-wrap {
+        width: 82%;
+        left: 5vw,
+    }
+    #Landing .header-text {
+        height: 40%;
+    }
+    #Landing .header {
+        display: flex;
+        min-height: 0;
+    }
+    #Landing h1 {
+        font-size: 8vw;
+    }
+    #Landing h3 {
+        font-size: 8vw;
     }#Landing p {
         font-size: 4vw;
     }
