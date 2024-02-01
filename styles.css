@@ -461,7 +461,6 @@ h3 {
     text-align: right;
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
-    margin-bottom: 3em;
     line-height: 1.25em;
 }
 .reverse {
@@ -479,7 +478,6 @@ h3 {
 .info-text-block {
     width: 50%;
     position: relative;
-    top: 10%;
 }
 .swipe-icon {
     float: right;
@@ -852,8 +850,13 @@ footer{
     .info-flex {
     margin-left: 5%;
     }
-    .info-text-block {
-        font-size: 0.89em;
+    
+    #Info .swiper-wrapper p {
+        font-size: 0.9em;
+        word-spacing: 0.1em;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+        line-height: 1em;
     }
 
     #Portfolio h2 {   
@@ -931,6 +934,7 @@ footer{
     .cButton {
         font-size: 0.75em;
     }
+
 }
 @media (max-width:400px) {
     #Landing .text-wrap {
@@ -955,7 +959,5 @@ footer{
     .cButton {
         font-size: 0.75em;
     }
-    .info-text-block {
-        top: 5%;
-    }
+
 }
