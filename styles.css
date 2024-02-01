@@ -400,7 +400,7 @@ h3 {
     
 }
 .a {
-    background: rgba(85, 85, 85, 0.281);
+    background: rgba(53, 53, 53, 0.281);
     display: flex!important;
     flex-direction: row;
     flex-wrap: wrap;
@@ -462,7 +462,7 @@ h3 {
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
     margin-bottom: 3em;
-    line-height: 1em;
+    line-height: 1.25em;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -852,6 +852,9 @@ footer{
     .info-flex {
     margin-left: 5%;
     }
+    .info-text-block {
+        font-size: 0.89em;
+    }
 
     #Portfolio h2 {   
         right: 1.5em;
@@ -907,9 +910,7 @@ footer{
         width: 100%;
     }
 
-    .info-text-block {
-        height: 100%;
-    }  
+    
 }
 
 @media (max-aspect-ratio: 1/2) {
@@ -953,5 +954,8 @@ footer{
     }
     .cButton {
         font-size: 0.75em;
+    }
+    .info-text-block {
+        top: 5%;
     }
 }
