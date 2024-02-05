@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="cdn/css/humbleScroll.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
  </head>
@@ -60,20 +61,20 @@
       <div class="text-wrap">
         <div class="header-text">
           <div class="header-h1">
-            <h1 data-hs="fade right blur">Crafted Comfort</h1>
+            <h1 data-aos="fade-right">Crafted Comfort</h1>
             <div class="header">
-              <h1>For Your&nbsp;</h1>
-              <span id="typed"></span>
+              <h1 data-aos="fade-right">For Your&nbsp;</h1>
+              <span data-aos="fade-right" id="typed"></span>
             </div>
-            <div class="subtext">
+            <div data-aos="fade-right" class="subtext">
               <p>Order Custom-Made Upholstery Furniture of Premium Quality</p>
             </div>
           </div>
-          <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
+          <a data-aos="fade-right" href="#Contact" title="button" class="cButton"><i></i>CONTACT</a>
         </div>
       </div>
 
-      <div data-hs="fade right blur" class="scroll-icon" id="animation.container"></div>
+      <div class="scroll-icon" id="animation.container"></div>
         <script>
           var animation = bodymovin.loadAnimation({
             container: document.getElementById('animation.container'),
@@ -89,10 +90,10 @@
     <section id="About" class="screen">
       <div class="about-wrap">
         <div class="about-container">
-          <h1 data-hs="fade right blur">About —</h1>
+          <h1 data-aos="fade-right">About —</h1>
           <article class="about-text">
 
-            <p>
+            <p data-aos="fade-right">
               <strong>
                 <span style="color: rgb(252, 209, 208); font-size: 1.3em;">Crafting Comfort</span>
               </strong>
@@ -100,10 +101,10 @@
               <span style="color: rgb(255, 218, 216); font-size: 1.5em;"><strong>2015</strong></span>
              — A dedicated team of craftsmen committed to merging comfort and art.<br><br></p>
             
-            <p><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Customisation Options</span></strong> — Choose <strong><span style="color: rgb(255, 192, 192);">fabric</span></strong>, <strong><span style="color: rgb(255, 204, 204);">color</span></strong>, and <strong><span style="color: rgb(255, 223, 223);">design</span></strong> to create a one-of-a-kind piece that suits your style.<br><br></p>
-            <p><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Meticulous Craftsmanship</span></strong> — Each piece is meticulously handcrafted, ensuring timeless design and durability.<br><br></p>
-            <p><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Quality Assurance</span></strong> — Premium hardwood frames and top-notch upholstery fabrics for enduring quality.<br><br></p>
-            <p><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Customer-Centric Approach</span></strong> — Your satisfaction is our priority, ensuring a seamless and exceptional experience.<br><br></p>
+            <p data-aos="fade-right"><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Customisation Options</span></strong> — Choose <strong><span style="color: rgb(255, 192, 192);">fabric</span></strong>, <strong><span style="color: rgb(255, 204, 204);">color</span></strong>, and <strong><span style="color: rgb(255, 223, 223);">design</span></strong> to create a one-of-a-kind piece that suits your style.<br><br></p>
+            <p data-aos="fade-right"><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Meticulous Craftsmanship</span></strong> — Each piece is meticulously handcrafted, ensuring timeless design and durability.<br><br></p>
+            <p data-aos="fade-right"><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Quality Assurance</span></strong> — Premium hardwood frames and top-notch upholstery fabrics for enduring quality.<br><br></p>
+            <p data-aos="fade-right"><strong><span style="color: rgb(252, 209, 208); font-size: 1.3em;">Customer-Centric Approach</span></strong> — Your satisfaction is our priority, ensuring a seamless and exceptional experience.<br><br></p>
           </article>
 
           <!-- <a href="#Contact" title="button" class="cButton"><i></i>CONTACT</a> -->
@@ -128,9 +129,9 @@
           <!-- FIRST SLIDE-->
           <div class="info-flex block">
             <div class="swiper-wrapper">
-              <div class="swiper-slide a">
-                <div class="icon"></div>
-                <div class="info-text-block">
+              <div class="swiper-slide a reverse">
+                <div data-aos="fade-right" class="icon"></div>
+                <div data-aos="fade-left" class="info-text-block">
                   <h2>For Your Home</h2>
                   <p>
                     Bring comfort and style to Every Corner of Your Home
@@ -143,9 +144,9 @@
           <!-- SECOND SLIDE-->
         <div class="info-flex block">
           <div class="swiper-wrapper">
-            <div class="swiper-slide a reverse">
-              <div class="icon"></div>
-              <div class="info-text-block">
+            <div class="swiper-slide a">
+              <div data-aos="fade-left" class="icon"></div>
+              <div data-aos="fade-right" class="info-text-block">
                 <h2>For Your Business</h2>
                 <p>Transform your commercial space with professional upholstery
                 <br><br>Elevate your corporate spaces, cafes, hotels, restaurants through our tailored upholstery solutions</p>
@@ -156,9 +157,9 @@
         <!-- THIRD SLIDE-->
         <div class="info-flex block">
           <div class="swiper-wrapper">
-            <div class="swiper-slide a">
-              <div class="icon"></div>
-              <div class="info-text-block">
+            <div class="swiper-slide a reverse">
+              <div data-aos="fade-right" class="icon"></div>
+              <div data-aos="fade-left"class="info-text-block">
                 <h2>Custom Solutions</h2>
                 <p>
                   Collaborate to design and craft unique furniture pieces tailored to your vision
@@ -171,9 +172,9 @@
         <!-- FOURTH SLIDE-->
         <div class="info-flex block">
           <div class="swiper-wrapper">
-            <div class="swiper-slide a reverse">
-              <div class="icon"></div>
-              <div class="info-text-block">
+            <div class="swiper-slide a">
+              <div data-aos="fade-left" class="icon"></div>
+              <div data-aos="fade-right" class="info-text-block">
                 <h2>Restoring</h2>
                 <p>
                   From vintage gems to cherished family heirlooms
@@ -188,7 +189,7 @@
     </section>
 
     <section id="Portfolio" class="screen">
-      <h2>— Portfolio</h2>
+      <h2 data-aos="fade-left">— Portfolio</h2>
       <div class="swiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -214,8 +215,8 @@
       <div class="contact-wrap">
 
         <div class="contact-header">
-          <h1>Contact —</h1>
-          <p class="contact-subtext">Duis aute irure dolor in pariatur. Excepteur non proident, sunt introve cest ula femm culpa quintos eli officia</p>
+          <h1 data-aos="fade-right">Contact —</h1>
+          <p data-aos="fade-right" class="contact-subtext">Duis aute irure dolor in pariatur. Excepteur non proident, sunt introve cest ula femm culpa quintos eli officia</p>
         </div>
           
         <div class="contact-container">
@@ -276,7 +277,7 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
-    <script src="cdn/js/humbleScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script>
@@ -365,10 +366,9 @@
         });
 
 
-        // HumbleScroll.js
-        const scroll = new HumbleScroll({
-        // options here
-        })
+        // aos.js Animate on Scroll
+        AOS.init();
+      
 
     </script>
 
