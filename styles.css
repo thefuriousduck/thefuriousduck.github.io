@@ -358,7 +358,7 @@ h3 {
 
 #Info.screen {
     
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(20, 20, 20);
 
     display: flex;
     flex-wrap: wrap;
@@ -497,22 +497,23 @@ h3 {
 
 #Portfolio.screen {
     height: 100vh;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(20, 20, 20);
 }
 #Portfolio h2 {
     position: relative;
     float: right;
     right: 15vw;
     top: 16vh;
-    width: 25vw;
+    width: 25%;
     color: #ffffff;
+    border-left: solid white 4px;
 }
 #Portfolio p {
     color: white;
     position: relative;
     margin-bottom: 4em;
     margin-left: 2em;
-    width: 50vw;
+    width: 50%;
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
 }
@@ -553,7 +554,7 @@ h3 {
 /* ____CONTACT START____*/
 
 #Contact.screen {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
     min-height: 850px;
     padding: 4em 0;
     display: flex;
@@ -565,6 +566,12 @@ h3 {
     position: relative;
     left: 6%;
     width: 40%;
+}
+.contact-header h1 {
+    border-left: solid white 4px;
+}
+.contact-subtext {
+    line-height: 1.25em;
 }
 .contact-wrap {
     width: 80vw;
@@ -723,9 +730,7 @@ footer{
     .slide3 {
         width: 60vw;
     }
-    #Portfolio p {
-        width: 40vw;
-    }
+
     
 }
 
@@ -858,6 +863,7 @@ footer{
 
     #Portfolio h2 {   
         right: 1.5em;
+        font-size: calc(1vw + 15px);
     }
     #Portfolio p {
         margin-left: 3em;
