@@ -188,25 +188,45 @@
     </section>
 
     <section id="Portfolio" class="screen">
-      <h2 data-aos="fade-left">Portfolio</h2>
+      <h2 data-aos="fade-right">Portfolio</h2>
       <div class="swiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <p><strong>Sofa for your Home</strong><br>Transform your living space with our home upholstery, adding a touch of comfort to every corner</p>
-            <img class="slide1" src="sofa1.PNG">
-          </div>
-          <div class="swiper-slide">
-            <p><strong>Restaurant booths and sofas</strong><br>Transform your restaurant into a haven of comfort and style with our plush chairs and sofas.</p>
-            <img class="slide2" src="sofa2.PNG">
-          </div>
-          <div class="swiper-slide">
-            <p><strong>Designer armchair</strong><br>Collaborate to design. Upholstery solutions tailored to your vision</p>
-            <img class="slide3" src="sofa3.PNG">
-          </div>
+            <div class="title narrow" data-swiper-parallax="-40">Armchair</div>
+            <div class="subtitle narrow" data-swiper-parallax="-40">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="blue-armchair.png">
         </div>
-        <!--<div class="swiper-pagination"></div>-->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-100">Restaurant sofa</div>
+            <div class="subtitle" data-swiper-parallax="-100">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="purple-booth.png">
+        </div>
+        <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-100">Bar boot</div>
+            <div class="subtitle" data-swiper-parallax="-100">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="green-booth.png">
+        </div>
+        <div class="swiper-slide">
+            <div class="title narrow" data-swiper-parallax="-40">Armchair</div>
+            <div class="subtitle narrow" data-swiper-parallax="-40">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="blue-armchair.png">
+        </div>
+        <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-100">Restaurant sofa</div>
+            <div class="subtitle" data-swiper-parallax="-100">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="purple-booth.png">
+        </div>
+        <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-100">Bar booth</div>
+            <div class="subtitle" data-swiper-parallax="-100">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="green-booth.png">
+        </div>
+        <div class="swiper-slide">
+            <div class="title narrow" data-swiper-parallax="-40">Armchair</div>
+            <div class="subtitle narrow" data-swiper-parallax="-40">Collaborate to design. Upholstery solutions tailorrred to your vision.</div>
+            <img src="blue-armchair.png">
+        </div>
+        </div>
       </div>
     </section>
 
@@ -214,7 +234,7 @@
       <div class="contact-wrap">
 
         <div class="contact-header">
-          <h1 data-aos="fade-right">&nbspContact</h1>
+          <h1 data-aos="fade-right">Contact</h1>
           <p data-aos="fade-right" class="contact-subtext">Ready to explore possibilities?<br>Reach us via Email<br><br><strong><a href="mailto:info@ruutform.com"span style="color: rgb(255, 223, 223); font-size: 1.3em;">info@ruutform.com</span></strong>
         </div>
           
@@ -297,45 +317,21 @@
         }
 
         // Swiper.js
-        const swiper2 = new Swiper('.swiper2', {
-          // Optional parameters
-          direction: 'horizontal',
-          initialSlide: 1,
-          spaceBetween: 100,
-          slidesPerView: 1,
+        const swiper2 = new Swiper('.swiper2', {    
+          slidesPerView: "auto",
           centeredSlides: true,
-          grabCursor: true,
-          slideToClickedSlide: true,
-          
+          spaceBetween: 40,
+          freeMode: true,
+          parallax: true,
 
           breakpoints: {
-            '@0.75': {
-              slidesPerView: 1.2,
-              spaceBetween: 10,
-            },
-
-            '@1.0': {
-              slidesPerView: 1.5,
-              spaceBetween: 10,
-            },
-
-            '@1.25': {
-              slidesPerView: 1.75,
-              spaceBetween: 200,
-            },
-          },
-
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+              '@1.5': {
+                  initialSlide: 1,
+              },
+          }
         });
+
+
         var swiper1 = new Swiper(".swiper1", {
           effect: "flip",
           grabCursor: true,
