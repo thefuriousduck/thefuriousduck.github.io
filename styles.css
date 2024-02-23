@@ -14,6 +14,9 @@ html,body,* {
 body {
     overflow-x: hidden;
 }
+::selection {
+    background: rgba(255, 220, 220, 0.384);;
+  }
 
 
 
@@ -44,7 +47,7 @@ header nav {
     background-color: #e0e0e0;
     opacity: 80%;
     border-radius: 25px;
-    height: 77px;
+    height: 55px;
 }
 #navbar {
     z-index: 5;
@@ -55,28 +58,28 @@ header nav {
 #navbar {
     position: fixed; /* Make it stick/fixed */
     top: -78px; /* Hide the navbar 50 px outside of the top view */
-    left: 10%;
+    left: 5%;
     width: 80%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 #navbar nav a {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 1.25em;
+    font-size: 1em;
     letter-spacing: 0.15em;
     color: rgb(0, 0, 0);
-    padding: 26px 15px;
+    padding: 26px 10px;
     border-radius: 20px;
 }
 #navbar nav li {
-    padding: 0 calc(7vw - 80px);
+    padding: 0 calc(7vw - 65px);
 }
 #navbar nav a:hover {
     background-color: #464646;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
-    transition: 0.1s;
-    padding: 20px 15px;
+    border-radius: 15px;
+    
+    padding: 10px 10px;
 }
 
 /* ____NAVBAR END____*/
@@ -261,8 +264,8 @@ h3 {
 .cButton {
     position: relative;
     padding: 0.8em 4em 0.8em 4em;
-    border: 2px solid #ffffff;
-    color: white;
+    border: 2px solid rgb(255, 220, 220);
+    color: rgb(255, 220, 220);
     font-size: 1em;
     font-weight: 800;
     border-radius: 15px;
@@ -278,7 +281,7 @@ h3 {
     max-width: 150px;
 }
 .cButton:hover {
-    background-color: #ffffff;
+    background-color: rgb(255, 220, 220);
     color: rgb(0, 0, 0);
     font-weight: 800;
 }
@@ -294,61 +297,79 @@ h3 {
 #About.screen {
     min-height: 850px;
     background-color: rgb(20, 20, 20);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .about-wrap {
-    /* border: 1px solid red; */
-    width: 100%;
-    left: 10%; 
-    margin: 12em 0 10em 0;
-
+    top: 15vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
 }
 .about-container {
-    /*border: 1px solid rgb(50, 209, 36);*/
     width: calc(50px + 35vw);
     margin: 0 1em 0 1em;
 }
-#About h1 {
+#About h2 {
     /* border: 1px solid rgb(0, 225, 255); */
     margin-bottom: 2em;
+    margin-top: 3em;
     text-align: center;
     font-size: 3em;
 }
-/*.about-text {
-    border: 1px solid red;
-} 
-*/
-#About .cButton {
-    left: 50%;
-    transform: translateX(-50%);
+#About h1 {
+    color: rgb(255, 220, 220);
 }
-.about-image {
-    height: 400px;
-    width: 400px;
-}
-.armchair3d {
-    height: 100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    top: 50%;
-}
-#About p {
+.header {
     color: white;
-    font-size: calc(1em + 0.3vw);
-    margin: 0vh 0 1em 0;
-    padding: 0;
-    word-spacing: 0.1em;
-    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    text-align: right;
+    padding-right: 1em;
 }
+#About .subtext {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1em;
+    max-width: 50%;
+    padding: 1em;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.about-text {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin: 3em 0;
+} 
+.about-image {
+    padding-top: 5em;
+    display: flex;
+    width: 90%; 
+}
+.about-image img {
+    width: 41%;
+    border-radius: 5%;
+    object-fit: contain;
+}
+.image-1 {
+    position: relative;
+    top: -4vw;
+}
+.image-2 {
+    position: relative;
+    left: -10vw;
+    z-index: 1;
+}
+.image-3 {
+    position: relative;
+    left: -20vw;
+    top: -4vw;
+}
+
+
 
 /* ____ABOUT END____*/
 
@@ -402,7 +423,6 @@ h3 {
 }
 #Info .swiper-slide {
     border-radius: 20px;
-    
 }
 .a {
     display: flex!important;
@@ -615,6 +635,9 @@ h3 {
     justify-content: space-evenly;
     align-items: center;
 }
+#Contact h1 {
+    font-size: 3em;
+}
 .contact-header {
     position: relative;
     left: 6%;
@@ -655,27 +678,14 @@ input[type=submit] {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 5px solid #424242;
+    border: 2px solid rgba(255, 220, 220, 0.2);
     background-color: rgba(255, 255, 255, 0.11);
-    color: white;
+    color: rgb(255, 220, 220);
     font-size: 1em;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin: 0.5em 0;
     resize: vertical;
-}
-#Contact .container p {
-    position: relative;
-    float: left;
-    left: 2%;
-    color: white;
-    font-size: 1em;
-    margin: 0.75em 0 0.25em 0;
-    padding: 0;
-    text-align-last: center;
-    word-spacing: 0.1em;
-    letter-spacing: 0.1em;
 }
 .contact-header p {
     color: white;
@@ -684,8 +694,21 @@ input[type=text], select, textarea {
     word-spacing: 0.1em;
     letter-spacing: 0.1em;
 }
+#Contact .container h2 {
+    position: relative;
+    float: left;
+    left: 2%;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 1em 0 0 0;
+    padding: 0;
+    text-align-last: center;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(146, 146, 146);
+    color: rgba(255, 220, 220, 0.726);
     opacity: 1; /* Firefox */
   }
 
@@ -792,22 +815,21 @@ footer{
     #Landing .header-text {
         min-height: 45%;
     }
-
-
     .about-wrap{
-        margin: 7em 0 7em 0;
+        
     }
     .about-container {
-        width: 70%;
+        width: 90%;
     }
-    .about-image {
-        margin-top: 5vh;
-    }
+
     #About .cButton {
         margin: auto;
     }  
     .info-wrap{
         width: 80%;
+    }
+    .block {
+        height: 35vh;
     }
     .info-flex {
        margin-left: 0;
@@ -819,7 +841,20 @@ footer{
         height: 50vh;
         width: 50%;
     }
+    .block {
+        width: 90%;
+    }
+    .info-wrap {
+        margin: 0 0 7em 0;
+        width: 100%;
+    }
+    .info-flex:nth-child(even) {
+    margin-left: 5%;
+    }
     
+    .info-flex {
+    margin-left: 5%;
+    }
     
 
 }
@@ -845,7 +880,7 @@ footer{
         top: 25vh;
         top: 25svh;
         left: 10vw;
-        width: 80vw;
+        width: 90vw;
     }
     .header-text {
         height: 50%;
@@ -858,26 +893,9 @@ footer{
         width: 90%;
     }
     .about-image {
-        width: 70vw;
-        height: 70vw;
+        width: 85vw;
+        height: 50vw;
     }
-
-    .block {
-        width: 90%;
-        height: 30vh;
-    }
-    .info-wrap {
-        margin: 0 0 7em 0;
-        width: 100%;
-    }
-    .info-flex:nth-child(even) {
-    margin-left: 5%;
-    }
-    
-    .info-flex {
-    margin-left: 5%;
-    }
-    
     #Info .swiper-wrapper p {
         font-size: 0.9em;
         word-spacing: 0.1em;
@@ -925,6 +943,7 @@ footer{
     }
     .info-text-block {
         border-left: none;
+        padding-left: 0;
     }
     
 }
@@ -948,8 +967,60 @@ footer{
     .cButton {
         font-size: 0.75em;
     }
-
+    .block {
+        height: 40vh;
+    }
 }
+
+
+/* ____NEW ABOUT START____*/
+
+@media  (min-aspect-ratio: 4/5) {
+    .about-wrap {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .about-container {
+        width: 50%;
+    }
+    .about-image {
+        width: 40%;
+    }
+    .about-image img {
+        width: 45%;
+    }
+    .image-2 {
+        left: -15%;
+    }
+    .image-3 {
+        left: -35%;
+    }
+}
+@media  (min-aspect-ratio: 5/4) {
+    .about-wrap {
+        flex-direction: row;
+        width: 90%;
+    }
+    .about-image {
+        width: 30%;
+        position: relative;
+        top: 10vh;
+        padding-top: 0;
+    }
+    .about-image img {
+        width: 45%;
+    }
+    .image-2 {
+        left: -5vw;
+    }
+    .image-3 {
+        left: -10vw;
+    }
+}
+
+/* ____NEW ABOUT END____*/
+
+
 @media (max-width:400px) {
     #Landing .text-wrap {
         width: 82%;
@@ -973,5 +1044,10 @@ footer{
     .cButton {
         font-size: 0.75em;
     }
-
+    .info-text-block {
+        border-left: none;
+    }
+    .block {
+        height: 44vh;
+    }
 }
